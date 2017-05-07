@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="modals">
+
+<head>
+  <title>Modals</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+</head>
+
+<body ng-controller="HomeController as controller">
+  <div class="container">
+        <h1>Pick a fighter:</h1>
+        <button class="btn" ng-click="controller.showModal('Anderson Silva')">Anderson "The Spider" Silva</button>
+        <button class="btn" ng-click="controller.showModal('Jon Jones')">Jon "Bones" Jones</button>
+        <button class="btn" ng-click="controller.showModal('Royce Gracie')">Royce Gracie</button>
+  </div>
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="/bower_components/angular-touch/angular-touch.min.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="/ngApp/app.js"></script>
+  <script src="/ngApp/controllers/controllers.js"></script>
+  <script src="/ngApp/services/services.js"></script>
+
+</body>
+
+</html>
